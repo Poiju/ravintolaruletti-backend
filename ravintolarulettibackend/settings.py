@@ -27,7 +27,7 @@ SECRET_KEY = 'oif(ej37t%#5)6p1$!jm!dgw)%2+7_%s!n4x9dwc5+@e+l6+0+'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['127.0.0.1']
+ALLOWED_HOSTS = ['127.0.0.1','http://ristoxxx.pythonanywhere.com']
 
 
 # Application definition
