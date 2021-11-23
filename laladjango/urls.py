@@ -18,6 +18,7 @@ Including another URLconf
 from django.urls import path, include
 from django.contrib.auth.models import User
 from rest_framework import serializers, viewsets, routers
+from rest_framework.authtoken import views
 
 # Serializers define the API representation.
 class UserSerializer(serializers.HyperlinkedModelSerializer):
@@ -42,6 +43,9 @@ router.register(r'users', UserViewSet)
 urlpatterns = [
     path('', include(router.urls)),
     path('api-auth/', include('rest_framework.urls', namespace='rest_framework')),
+]
+urlpatterns += [
+    path('api-token-auth/', views.obtain_auth_token)
 ]
 #urlpatterns = [
 #    path('admin/', admin.site.urls),
