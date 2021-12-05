@@ -1,4 +1,4 @@
-<h1 align="center">Ravintolaruletti<p align="center"> <a href="https://github.com/Poiju/ravintolaruletti-backend" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/django/django-original.svg" alt="django" width="40" height="40"/> </a> <a href="https://github.com/Poiju" target="_blank" rel="noreferrer"> <img src="https://www.vectorlogo.zone/logos/github/github-icon.svg" alt="github" width="40" height="40"/> </a> <a href="https://ruletti.herokuapp.com" target="_blank" rel="noreferrer"> <img src="https://www.vectorlogo.zone/logos/heroku/heroku-icon.svg" alt="heroku" width="40" height="40"/> </a> <a href="https://postman.com" target="_blank" rel="noreferrer"> <img src="https://www.vectorlogo.zone/logos/getpostman/getpostman-icon.svg" alt="postman" width="40" height="40"/> </a> <a href="https://github.com/Poiju/ravintolaruletti-mobile" target="_blank" rel="noreferrer"> <img src="https://reactnative.dev/img/header_logo.svg" alt="reactnative" width="40" height="40"/> </a> </p> </h1>
+<h1 align="center">Backend<p align="center"> <a href="https://github.com/Poiju/ravintolaruletti-backend" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/django/django-original.svg" alt="django" width="40" height="40"/> </a> <a href="https://github.com/Poiju" target="_blank" rel="noreferrer"> <img src="https://www.vectorlogo.zone/logos/github/github-icon.svg" alt="github" width="40" height="40"/> </a> <a href="https://ruletti.herokuapp.com" target="_blank" rel="noreferrer"> <img src="https://www.vectorlogo.zone/logos/heroku/heroku-icon.svg" alt="heroku" width="40" height="40"/> </a> <a href="https://postman.com" target="_blank" rel="noreferrer"> <img src="https://www.vectorlogo.zone/logos/getpostman/getpostman-icon.svg" alt="postman" width="40" height="40"/> </a> </h1>
 
 
 Team: [Risto Lähteenkorva](https://www.linkedin.com/in/r-lahteenkorva) , Maisa Mäntyvaara, [Krista Nyberg](https://www.linkedin.com/in/krista-nyberg-5a7721176/), Tomi Salo, [Tuomas Valkamo](https://www.linkedin.com/in/tuomasvalkamo/)
@@ -12,12 +12,11 @@ Team: [Risto Lähteenkorva](https://www.linkedin.com/in/r-lahteenkorva) , Maisa 
     <li><a href="#endpoints">Endpoints</a></li>
     <li><a href="#usage-of-postman">Usage of postman</a></li>
     <li><a href="#technologies-and-libraries">Technologies and libraries</a></li>
-    <li><a href="#installation-instructions-for-runnig locally">Installation instructions for runnig locally</a></li>
-    <li><a href="#license">License</a></li>
+    <li><a href="#installation-instructions-for-running-server-locally">Installation instructions for running server locally</a></li>
   </ol>
 </details>
 
-##Backend
+## Backend
 
 Documentation of unfinished backend
 
@@ -25,15 +24,18 @@ hosted at [here](https://ruletti.herokuapp.com)
 
 ## Endpoints
 
-| Function | Description | Attribute |
+| Function | Description | Attributes |
 | --- | --- | --- |
-| --- | --- | --- |
-| --- | --- | --- |
-| --- | --- | --- |
-| --- | --- | --- |
+| / | api-root | GET, no attributes |
+| /users/ | users list | GET, no attributes |
+| /users/ | create new user | POST, Authorization: Token xxxx, username='username' email='email' is_staff=True/False |
+| /users/n/ | individual users data | GET, n = user number |
+| /api-auth/login | login screen | POST -H Authorization: Token xxxx |
+| /api-auth/logout | logout screen | no attributes |
+| /api-token-auth | get token for user | POST user:password |
 
 
-##Usage of postman
+## Usage of postman
 
 <p align="center">
 <a ><img src="" alt="kuva1" border="0" width="30%" />&nbsp;</a>
