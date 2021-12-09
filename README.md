@@ -37,10 +37,13 @@ hosted at [here](https://ruletti.herokuapp.com)
 
 ## Usage of postman
 
-<p align="center">
-<a ><img src="" alt="kuva1" border="0" width="30%" />&nbsp;</a>
-<a ><img src="" alt="kuva1" border="0" width="30%" />&nbsp;</a>
-<a ><img src="" alt="kuva1" border="0" width="30%" /></a>
+<p >
+<img src="https://i.ibb.co/CQTVc16/Add-user1.png" alt="Add-user1" border="0"> <br>  
+<b> Add user 1 </b> <br>  
+<img src="https://i.ibb.co/hVzck5w/Add-user2.png" alt="Add-user2" border="0"> <br>  
+<b> Add user 2 </b> <br> 
+<img src="https://i.ibb.co/Tmr0DKy/token.png" alt="token" border="0"> <br>
+<b> Get token </b> <br> 
 </p>
 
 ## Technologies and libraries
